@@ -1,0 +1,28 @@
+{
+  "name": "pagerduty-on-call-to-slack-channel-topic",
+  "version": "1.0.0",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/OronNadiv/pagerduty-on-call-to-slack-channels-topic.git"
+  },
+  "engines": {
+    "iojs": "^1",
+    "npm": "^2"
+  },
+  "dependencies": {
+    "bluebird": "^2",
+    "moment": "^2",
+    "phone-formatter": "^0.0.2",
+    "request-promise": "^0.4",
+    "underscore": "^1"
+  },
+  "devDependencies": {
+    "eslint": "*",
+    "eslint-plugin-mocha": "*",
+    "eslint-plugin-nodeca": "*"
+  },
+  "scripts": {
+    "lint": "eslint --ignore-path .gitignore ."
+  }
+}
