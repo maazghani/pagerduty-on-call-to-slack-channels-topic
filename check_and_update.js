@@ -77,7 +77,7 @@ function checkPagerDuty() {
         throw 'Escalation policies cannot be found.';
       }
       if (process.env.ESCALATION_POLICY_NAME) {
-        escalationPolicy = _.findWhere(escalationPolicies, {name: process.env.ESCALATION_POLICY_NAME.toLowerCase()});
+        escalationPolicy = _.findWhere(escalationPolicies, {name: process.env.ESCALATION_POLICY_NAME});
         if (!escalationPolicy) {
           throw 'Escalation policy could not be found.  Name: ' + process.env.ESCALATION_POLICY_NAME + ', escalationPolicies: ' + JSON.stringify(escalationPolicies);
         }
